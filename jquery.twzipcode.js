@@ -319,13 +319,13 @@
                 .attr('name', opts.countyName)
                 .addClass(role.county.data('style') || (undefined !== opts.css[0] ? opts.css[0] : ''))
                 .appendTo(role.county.length ? role.county : container)
-                .find('[value='+role.county.data().value+']');
+                .find('[value='+role.county.data().value+']').attr('selected','selected');
 
             $('<select/>')
                 .attr('name', opts.districtName)
                 .addClass(role.district.data('style') || (undefined !== opts.css[1] ? opts.css[1] : ''))
                 .appendTo(role.district.length ? role.district : container)
-                .find('[value='+role.district.data().value+']');
+                .find('[value='+role.district.data().value+']').attr('selected','selected');
 
             $('<input/>')
                 .attr({'type': 'text', 'name': opts.zipcodeName})
