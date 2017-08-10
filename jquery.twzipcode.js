@@ -104,7 +104,7 @@
         langFile = self.options.language.replace(/\.js$/, '');
         
         // Get the languag JSON file.
-        $.getJSON(langFile + '.js', function (data) {
+        $.getJSON(langFile + '.json', function (data) {
 
             self.data = data;
             try {
